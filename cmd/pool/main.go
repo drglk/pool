@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"pool/pool"
 	"runtime"
-	"vkintern/pool"
 )
 
 func main() {

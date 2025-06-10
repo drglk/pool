@@ -1,3 +1,3 @@
-module vkintern
+module pool
 
 go 1.23.4
