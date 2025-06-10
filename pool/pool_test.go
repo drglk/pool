@@ -192,19 +192,21 @@ func TestMultiplyWorkers(t *testing.T) {
 		Output []string
 	}{
 		{
-			Name:   "Send nothing",
-			Input:  []string{},
-			Output: []string{},
+			Name:  "Send nothing",
+			Input: []string{},
 		},
 		{
-			Name:   "Send once",
-			Input:  []string{"test1"},
-			Output: []string{"1: test1"},
+			Name:  "Send once",
+			Input: []string{"test1"},
 		},
 		{
-			Name:   "Send double",
-			Input:  []string{"test1", "test2"},
-			Output: []string{"1: test1", "1: test2"},
+			Name:  "Send double",
+			Input: []string{"test1", "test2"},
+		},
+
+		{
+			Name:  "Send many",
+			Input: []string{"test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"},
 		},
 	}
 
